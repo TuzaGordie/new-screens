@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>two</title>
+  <link rel="stylesheet" href="css/two.css">
+</head>
+
+<body>
+  <div class="wrapper">
+    <div class="inner-wrapper">
+      <p class="p-text">Please fill in the necessary data to configure Depot <b>Yardley Wood!</b></p>
+
+      <div class="box">
+
+        <div class="box-header">
+          <div class="box-header-left">
+            <p class="p-text">Electricity tarrifs</p>
+          </div>
+          <div class="box-header-right">
+            <label class="toggle" for="uniqueID">
+              <input type="checkbox" class="toggle__input" id="uniqueID" />
+              <span class="toggle-track">
+                <span class="toggle-indicator">
+                  <!--  This check mark is optional  -->
+                  <span class="checkMark">
+                    <svg viewBox="0 0 24 24" id="ghq-svg-check" role="presentation" aria-hidden="true">
+                      <path
+                        d="M9.86 18a1 1 0 01-.73-.32l-4.86-5.17a1.001 1.001 0 011.46-1.37l4.12 4.39 8.41-9.2a1 1 0 111.48 1.34l-9.14 10a1 1 0 01-.73.33h-.01z">
+                      </path>
+                    </svg>
+                  </span>
+                </span>
+              </span>
+            </label>
+          </div>
+        </div>
+
+        <div class="hr"></div>
+        
+        <div class="box-body">
+
+          <p class="tarrif-paragraph">
+            Tarrifs set here will be used to calculate the cost of a energey used to charge buses. <br>
+            You can set 3 different tarrifs for the depot and the tarrifs <b>should cover 24 hours.</b> <br>
+            Tarrifs will be in effect from the point you saved it and wont affect previous calculations.
+          </p>
+
+          <span class="text-medium">Currency of the Depot</span>
+          <p>Cost of Electricity will appear in the selcected currency</p>
+
+          <select class="form-input select-currency mb-2" name="currency">
+            <option value="USD" selected>USD</option>
+            <option value="GBP">GBP</option>
+            <option value="CAD">CAD</option>
+            <option value="AUD">AUD</option>
+            <option value="NGN">NGN</option>
+          </select>
+
+          <div class="hr"></div>
+
+          <h4>Rate 1</h4>
+          <p>Cost per kWh</p>
+          <input class="form-input" style="width:90px" type="text">pence/kWh
+          <p>Time <span class="text-italic">(from-to)</span> </p>
+          <div class="box-time">
+            <p>from</p>
+            <input class="form-input" type="time">
+            <p>- to </p>
+            <input class="form-input" type="time">
+          </div>
+
+          <div class="hr"></div>
+
+          <div class="box-rate">
+            <div>
+              <h4>Rate 2</h4>
+            </div>
+            <div>
+              <label class="toggle" for="uniqueID2">
+                <input type="checkbox" class="toggle__input" id="uniqueID2" />
+                <span class="toggle-track">
+                  <span class="toggle-indicator">
+                    <!--  This check mark is optional  -->
+                    <span class="checkMark">
+                      <svg viewBox="0 0 24 24" id="ghq-svg-check" role="presentation" aria-hidden="true">
+                        <path
+                          d="M9.86 18a1 1 0 01-.73-.32l-4.86-5.17a1.001 1.001 0 011.46-1.37l4.12 4.39 8.41-9.2a1 1 0 111.48 1.34l-9.14 10a1 1 0 01-.73.33h-.01z">
+                        </path>
+                      </svg>
+                    </span>
+                  </span>
+                </span>
+              </label>
+            </div>
+          </div>
+
+          <div class="hr"></div>
+
+          <div class="box-rate">
+            <div>
+              <h4>Rate 3</h4>
+            </div>
+            <div>
+              <label class="toggle" for="uniqueID3">
+                <input type="checkbox" class="toggle__input" id="uniqueID3" />
+                <span class="toggle-track">
+                  <span class="toggle-indicator">
+                    <!--  This check mark is optional  -->
+                    <span class="checkMark">
+                      <svg viewBox="0 0 24 24" id="ghq-svg-check" role="presentation" aria-hidden="true">
+                        <path
+                          d="M9.86 18a1 1 0 01-.73-.32l-4.86-5.17a1.001 1.001 0 011.46-1.37l4.12 4.39 8.41-9.2a1 1 0 111.48 1.34l-9.14 10a1 1 0 01-.73.33h-.01z">
+                        </path>
+                      </svg>
+                    </span>
+                  </span>
+                </span>
+              </label>
+            </div>
+          </div>
+
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>
